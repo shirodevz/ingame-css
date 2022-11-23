@@ -1,0 +1,158 @@
+#leaderContainer {
+  margin-top: 10px;
+  border-top: 4px dotted var(--border-color)
+}
+
+div#streakCount {
+  background: transparent;
+  left      : 50%;
+  position  : fixed;
+  transform : translateX(-50%) scale(2);
+  bottom    : 15%;
+}
+
+#killsVal,
+#deathsVal,
+#streakVal,
+#myScoreVal,
+#kdVal {
+  color: white;
+}
+
+.weapItem {
+  display  : block;
+  position : fixed;
+  left     : 50%;
+  bottom   : 3%;
+  transform: translateX(-50%);
+}
+
+.weapIcon[style="opacity: 0.7; margin-right: 25px;"],
+.weapIcon[style="opacity: 0.7;"],
+.weapIcon[style="opacity:0.7;margin-right:25px"] {
+  transform : rotateX(90deg);
+  transition: .0s;
+  filter    : brightness(0) drop-shadow(0 0 10px green);
+}
+
+.weapIcon[style="opacity: 1;"],
+.weapIcon[style="opacity:1"],
+.weapIcon[style="opacity: 1; margin-right: 25px;"] {
+  transition: .0s;
+  filter    : brightness(0) drop-shadow(0 0 10px green);
+}
+
+#timerDisplay {
+  display   : block !important;
+  background: transparent;
+  left      : 50%;
+  bottom    : 20%;
+  position  : fixed;
+  transform : translateX(-50%);
+}
+
+#timerIcon {
+  display: none;
+}
+
+#timerVal {
+  color    : black;
+  font-size: 40px;
+}
+
+.debugInfo {
+  background : rgba(0, 0, 0, .3);
+  padding    : 10px;
+  bottom     : 3%;
+  left       : 10px;
+  margin-top : -10px;
+  margin-left: -10px;
+}
+
+#timerVal,
+#ammoVal,
+#healthValue {
+  text-shadow: 2px 2px green, 2px -2px green, -2px 2px green, -2px -2px green;
+}
+
+#ammoDisplay {
+  transform       : unset;
+  display         : block;
+  position        : fixed;
+  bottom          : calc(50% - 50px);
+  left            : calc(50% - 40px);
+  transform       : unset;
+  width           : 80px;
+  padding         : 0;
+  height          : 8px;
+  background-color: transparent;
+}
+
+#ammoVal {
+  position : fixed;
+  bottom   : 25%;
+  right    : 25%;
+  font-size: 60px;
+  color    : black
+}
+
+#ammoMax,
+#ammoIcon {
+  display: none;
+}
+
+#healthValue {
+  color    : black;
+  font-size: 60px;
+  position : fixed;
+  left     : 30%;
+  bottom   : 25%;
+}
+
+#maxHP,
+#challIcon {
+  display: none;
+}
+
+#healthValueHolder {
+  background: transparent;
+}
+
+#reloadMsg {
+  padding-left : unset;
+  padding-right: unset;
+  line-height  : unset;
+  bottom       : 44%;
+  background   : transparent;
+  border       : none;
+  color        : var(--sub-color);
+}
+
+.healthBarSeg {
+  width        : -webkit-fill-available;
+  margin-right : -1px;
+  border-radius: unset;
+  background   : transparent;
+}
+
+#healthBar {
+  border        : black solid 2px;
+  width         : 300px;
+  height        : 10px;
+  display       : flex;
+  flex-direction: row;
+  background    : transparent;
+  position      : fixed;
+  bottom        : 10px;
+  left          : 50%;
+  transform     : translateX(-50%);
+}
+
+.hpBSeg {
+  border-radius: unset;
+  box-shadow   : unset;
+}
+
+#hudClassIcon {
+  display: none;
+}
